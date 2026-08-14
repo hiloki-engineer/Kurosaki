@@ -50,33 +50,33 @@ export default function Home() {
         <section className="hero">
           <div className="wrap heroGrid">
             <div>
-              <span className="eyebrow">洗うたびに、食欲そそる艶髪へ</span>
+              <span className="eyebrow">宇都宮生まれ、話題沸騰中</span>
               <h1>
-                皮はパリッと、
+                餃子を楽しんだあとも、
                 <br />
-                髪は<span className="accent">もちもち艶髪</span>に。
+                髪も体も<span className="accent">サッパリ</span>に。
               </h1>
               <p className="lead">
-                餃子職人の&quot;皮づくり&quot;から着想した独自処方。表面はサラッと、内側はもちもち仕上がる新感覚シャンプー「GYOZA
-                SHAMPOO」誕生。
+                全身洗えてリンスもいらない、敏感肌にもやさしいオールインワンシャンプー「GYOZA
+                SHAMPOO」。餃子や揚げ物の油のニオイもしっかり洗い流します。
               </p>
               <div className="heroActions">
                 <a className="btn btnPrimary" href="#pricing">
-                  初回50%OFFで試す
+                  ¥880で購入する
                 </a>
                 <a className="btn btnGhost" href="#ingredients">
-                  成分を見る
+                  特長を見る
                 </a>
               </div>
               <div className="heroBadges">
                 <span>
-                  <span className="dot"></span>無添加処方
+                  <span className="dot"></span>ノンシリコン
                 </span>
                 <span>
-                  <span className="dot"></span>国産キャベツ由来成分
+                  <span className="dot"></span>リンスがいらない
                 </span>
                 <span>
-                  <span className="dot"></span>累計30万本突破
+                  <span className="dot"></span>全身洗えるオールインワン
                 </span>
               </div>
             </div>
@@ -127,36 +127,50 @@ export default function Home() {
               <svg className="bottle" viewBox="0 0 220 340" fill="none">
                 <ellipse
                   cx="110"
-                  cy="320"
-                  rx="70"
+                  cy="322"
+                  rx="72"
                   ry="14"
                   fill="rgba(59,42,26,0.12)"
                 />
+                {/* pouch spout & cap */}
+                <rect x="94" y="18" width="32" height="24" rx="7" fill="#3B2A1A" />
+                <rect x="86" y="38" width="48" height="20" rx="10" fill="#8A4B22" />
+                {/* pouch body */}
                 <path
-                  d="M78 70h64v-24c0-8-6-14-14-14H92c-8 0-14 6-14 14v24Z"
-                  fill="#8A4B22"
+                  d="M50 66 C50 58 56 52 64 52 H156 C164 52 170 58 170 66 V276 C170 300 150 316 122 316 H98 C70 316 50 300 50 276 Z"
+                  fill="#FBEFD9"
+                  stroke="#E4C9A0"
+                  strokeWidth="2"
                 />
-                <rect x="86" y="18" width="48" height="20" rx="6" fill="#3B2A1A" />
-                <path
-                  d="M60 70h100c12 0 20 10 20 22v190c0 22-18 34-40 34H80c-22 0-40-12-40-34V92c0-12 8-22 20-22Z"
-                  fill="#E4572E"
-                />
-                <path
-                  d="M60 70h100c12 0 20 10 20 22v40H40v-40c0-12 8-22 20-22Z"
-                  fill="#D98E3B"
-                />
-                <rect x="46" y="150" width="128" height="120" rx="18" fill="#FFF8EC" />
-                <circle cx="110" cy="188" r="20" fill="#D98E3B" />
-                <path
-                  d="M92 188c4-8 12-12 18-12s14 4 18 12c-4 8-12 12-18 12s-14-4-18-12Z"
+                <ellipse
+                  cx="82"
+                  cy="130"
+                  rx="16"
+                  ry="58"
                   fill="#fff"
+                  opacity="0.35"
+                  transform="rotate(-8 82 130)"
                 />
+                {/* label */}
+                <rect x="64" y="146" width="92" height="108" rx="14" fill="#fff" stroke="#E4572E" strokeWidth="3" />
+                <path d="M64 160 V160 a14 14 0 0 1 14 -14 h64 a14 14 0 0 1 14 14 v10 H64 Z" fill="#E4572E" />
                 <text
                   x="110"
-                  y="235"
+                  y="167"
                   textAnchor="middle"
                   fontFamily="Hiragino Sans, sans-serif"
-                  fontSize="15"
+                  fontSize="9"
+                  fontWeight="700"
+                  fill="#fff"
+                >
+                  宇都宮限定
+                </text>
+                <text
+                  x="110"
+                  y="205"
+                  textAnchor="middle"
+                  fontFamily="Hiragino Sans, sans-serif"
+                  fontSize="17"
                   fontWeight="700"
                   fill="#8A4B22"
                 >
@@ -164,13 +178,24 @@ export default function Home() {
                 </text>
                 <text
                   x="110"
-                  y="252"
+                  y="223"
                   textAnchor="middle"
                   fontFamily="Hiragino Sans, sans-serif"
                   fontSize="9"
                   fill="#B08A5F"
                 >
                   GYOZA SHAMPOO
+                </text>
+                <text
+                  x="110"
+                  y="244"
+                  textAnchor="middle"
+                  fontFamily="Hiragino Sans, sans-serif"
+                  fontSize="12"
+                  fontWeight="700"
+                  fill="#E4572E"
+                >
+                  ¥880
                 </text>
               </svg>
             </div>
@@ -180,10 +205,10 @@ export default function Home() {
         {/* STRIP */}
         <div className="strip">
           <div className="wrap">
-            <div className="item">🥟 モンドセレクション受賞風</div>
-            <div className="item">🧴 30日間返金保証</div>
-            <div className="item">🌱 無香料モードあり</div>
-            <div className="item">🇯🇵 国内工場生産</div>
+            <div className="item">🥟 宇都宮限定パッケージ</div>
+            <div className="item">🧴 全身に使える</div>
+            <div className="item">🌱 敏感肌にもやさしい処方</div>
+            <div className="item">🇯🇵 国内生産</div>
           </div>
         </div>
 
@@ -192,24 +217,24 @@ export default function Home() {
           <div className="wrap">
             <div className="sectionHead">
               <span className="eyebrow">こんなお悩みありませんか？</span>
-              <h2>髪のパサつき、ぺたんこ、まとまらない。</h2>
-              <p>その悩み、餃子の「皮」と「羽根」の力で解決できるかもしれません。</p>
+              <h2>髪や体についた、油・ニオイが気になる。</h2>
+              <p>そのお悩み、宇都宮生まれの「GYOZA SHAMPOO」がスッキリ解決します。</p>
             </div>
             <div className="worryGrid">
               <div className="worryCard">
-                <div className="emoji">😩</div>
-                <h3>髪がパサついてまとまらない</h3>
-                <p>皮由来のもちもち保湿成分が、髪の内側までしっとり閉じ込めます。</p>
+                <div className="emoji">🥟</div>
+                <h3>餃子や揚げ物のあと、ニオイが気になる</h3>
+                <p>油汚れをしっかり洗い流し、気になるニオイをオフします。</p>
               </div>
               <div className="worryCard">
-                <div className="emoji">📉</div>
-                <h3>夕方になるとぺたんこに</h3>
-                <p>羽根つき仕上げ処方で、根元からふんわり軽やかなボリュームをキープ。</p>
+                <div className="emoji">⏱️</div>
+                <h3>お風呂の時間を短縮したい</h3>
+                <p>リンス不要の1本で、洗う手間も時間もぐっと時短に。</p>
               </div>
               <div className="worryCard">
-                <div className="emoji">👃</div>
-                <h3>におい残りが心配</h3>
-                <p>ご安心を。にんにく・にらは香り成分を除去して配合、爽やかなハーブの香りです。</p>
+                <div className="emoji">🌿</div>
+                <h3>肌が弱くてシャンプー選びに困る</h3>
+                <p>ノンシリコン・敏感肌にも使えるやさしい処方です。</p>
               </div>
             </div>
           </div>
@@ -219,9 +244,9 @@ export default function Home() {
         <section id="ingredients" className="ingredients">
           <div className="wrap">
             <div className="sectionHead">
-              <span className="eyebrow">こだわりの配合</span>
-              <h2>餃子の&quot;うまみ&quot;を、髪へ。</h2>
-              <p>職人が選び抜いた具材由来成分を、頭皮ケア成分として再設計しました。</p>
+              <span className="eyebrow">こだわりのポイント</span>
+              <h2>1本で、洗う。それだけでいい。</h2>
+              <p>髪も体も、これ1本でサッパリ仕上がるオールインワン処方です。</p>
             </div>
             <div className="ingGrid">
               <div className="ingCard">
@@ -238,9 +263,9 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="body">
-                  <span className="tag">保湿</span>
-                  <h3>🥬 国産キャベツ由来成分</h3>
-                  <p>皮のもちもち感を生む食物繊維成分をヒントに、髪表面のうるおいベールを形成。</p>
+                  <span className="tag">時短</span>
+                  <h3>🧴 リンスがいらない</h3>
+                  <p>洗い流すだけで指通りなめらか。忙しい日のバスタイムを時短します。</p>
                 </div>
               </div>
               <div className="ingCard">
@@ -256,9 +281,9 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="body">
-                  <span className="tag">頭皮ケア</span>
-                  <h3>🌱 ニラ由来エキス</h3>
-                  <p>血行促進が期待されるニラエキスを消臭精製し、健やかな地肌環境をサポート。</p>
+                  <span className="tag">全身</span>
+                  <h3>🚿 全身洗えるオールインワン</h3>
+                  <p>髪はもちろん、体まで洗えるタイプ。旅行や銭湯にも便利です。</p>
                 </div>
               </div>
               <div className="ingCard">
@@ -269,9 +294,9 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="body">
-                  <span className="tag">艶感</span>
-                  <h3>✨ 香味オイルブレンド</h3>
-                  <p>フライパンで焼き上げたような艶とコシを、軽やかなオイルブレンドで実現。</p>
+                  <span className="tag">低刺激</span>
+                  <h3>🌱 敏感肌にも・ノンシリコン</h3>
+                  <p>やさしい洗い上がりで、敏感肌の方にもお使いいただけます。</p>
                 </div>
               </div>
             </div>
@@ -316,7 +341,7 @@ export default function Home() {
               <div className="reviewCard">
                 <div className="stars">★★★★★</div>
                 <p className="quote">
-                  「洗い上がりのツヤがすごい。ただ毎回夜ご飯に餃子を食べたくなるのが唯一の副作用です（笑）」
+                  「リンスがいらないので本当に時短。敏感肌の私でも突っ張らずに使えました。」
                 </p>
                 <div className="reviewer">
                   <div className="avatar">M</div>30代・美容師
@@ -325,7 +350,7 @@ export default function Home() {
               <div className="reviewCard">
                 <div className="stars">★★★★★</div>
                 <p className="quote">
-                  「ぺたんこ髪が悩みでしたが、羽根つき仕上げ処方のおかげで夕方までふんわり続きます。」
+                  「宇都宮で餃子を食べまくった帰り道、これで洗ったらニオイもスッキリ。全身に使えるのも便利です。」
                 </p>
                 <div className="reviewer">
                   <div className="avatar">K</div>20代・営業職
@@ -334,10 +359,10 @@ export default function Home() {
               <div className="reviewCard">
                 <div className="stars">★★★★☆</div>
                 <p className="quote">
-                  「においが心配でしたが、実際は爽やかなハーブの香り。安心してオフィスにも行けます。」
+                  「主人の頭皮のニオイ対策に購入。加齢臭にも良いと聞いて試してみたら効果を実感しました。」
                 </p>
                 <div className="reviewer">
-                  <div className="avatar">S</div>40代・会社員
+                  <div className="avatar">S</div>40代・主婦
                 </div>
               </div>
             </div>
@@ -352,17 +377,16 @@ export default function Home() {
                 className="eyebrow"
                 style={{ background: "rgba(255,255,255,0.2)", color: "#fff" }}
               >
-                今だけ限定オファー
+                宇都宮限定・数量限定
               </span>
-              <h2>初回限定・お試しセット</h2>
+              <h2>GYOZA SHAMPOO</h2>
               <div className="priceRow">
-                <span className="old">¥4,980</span>
-                <span className="new">¥2,480</span>
-                <span className="unit">/ 本（税込）</span>
+                <span className="new">¥880</span>
+                <span className="unit">（税込・1個）</span>
               </div>
-              <p className="note">送料無料・いつでも解約OK・30日間全額返金保証付き</p>
+              <p className="note">宇都宮の一部店舗限定販売・おひとり様5個まで</p>
               <a className="btn btnPrimary" href="#top">
-                今すぐ購入して試してみる
+                店舗で購入する
               </a>
             </div>
           </div>
@@ -422,7 +446,9 @@ export default function Home() {
           </div>
           <div className="footerBottom">
             <span>© 2026 GYOZA SHAMPOO. All rights reserved.</span>
-            <span>本サイトはデモ用に制作されたフィクションのLPです。</span>
+            <span>
+              本サイトは宇都宮限定「餃子シャンプー」を参考に制作した非公式デモLPです。
+            </span>
           </div>
         </div>
       </footer>
